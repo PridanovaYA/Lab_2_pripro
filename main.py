@@ -1,6 +1,7 @@
 import argparse
 
 from Reader import Reader
+
 from Valid import Valid
 
 
@@ -13,5 +14,6 @@ parser.add_argument("-output", type=str, default="res.txt", help="Output path")
 par = parser.parse_args()
 
 f = Reader(par.input)
+
 print(f)
 
