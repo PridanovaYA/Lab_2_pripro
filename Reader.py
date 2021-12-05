@@ -1,4 +1,5 @@
 import json
+from check import Check
 
 class Reader:
     def __init__(self, file_path) -> None:
@@ -7,5 +8,6 @@ class Reader:
         array: list = []
         data = json.load(open(self.path, encoding='windows-1251'))
         for i in data:
-            array.append(i.copy())
+            array.append(Check(i.copy()))
         return array
+
