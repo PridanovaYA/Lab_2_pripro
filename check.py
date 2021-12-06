@@ -2,6 +2,8 @@ import re
 
 
 class Check:
+    """ класс для проверки валидности написания"""
+
     dictionary: dict
 
     def __init__(self, a) -> None:
@@ -24,7 +26,7 @@ class Check:
         # print(self.dictionary["height"])
         if re.match(pat, str(self.dictionary["height"])):
             a = True
-        if (a == True):
+        if a:
             return True
         return False
 
@@ -67,6 +69,7 @@ class Check:
         return False
 
     def check_academic_degree(self) -> bool:
+        """для проверки академической степени"""
         pat = "Бакалавр|Специалист|Магистр|Кандидат наук|Доктор наук"
         if re.match(pat, self.dictionary["academic_degree"]):
             return True

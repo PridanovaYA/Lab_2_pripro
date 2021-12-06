@@ -3,7 +3,7 @@ from tqdm import tqdm
 
 
 class Writer:
-    """класс для записа в файл"""
+    """класс для записи в файл"""
     def __init__(self, file_path) -> None:
         self.path = file_path
 

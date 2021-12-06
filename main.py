@@ -1,10 +1,7 @@
 import argparse
 from tqdm import tqdm
 from Reader import Reader
-
 from Valid import Valid
-#filename = "16.txt"
-#file_path = "D://Lab_2_pripro/16.txt"
 from Writer import Writer
 
 parser = argparse.ArgumentParser("Input/Output parser")
@@ -20,14 +17,14 @@ res = array.count_errors_in_dict()
 writer = Writer(par.output)
 writer.file_writer(array)
 
-print("Валидные записи:",v)
-print("Невилидные записи:",inv)
+print("Валидные записи:", v)
+print("Невилидные записи:", inv)
 print("Ошибка в номере телефона:", res[0])
-print("Рост", res[1])
-print("ИНН", res[2])
-print("Номер паспорта", res[3])
-print("Университет", res[4])
-print("Возраст", res[5])
-print("Степень", res[6])
-print("Вероисповедание", res[7])
-print("Адрес", res[8])
+print("Ошибка в росте", res[1])
+print("Ошибка в ИНН", res[2])
+print("Ошибка в номере паспорта", res[3])
+print("Ошибка в наименовании университета", res[4])
+print("Ошибка в возрасте", res[5])
+print("Ошибка в степени", res[6])
+print("Ошибка в вероисповедании", res[7])
+print("Ошибка в адресе", res[8])

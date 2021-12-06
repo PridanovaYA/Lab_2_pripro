@@ -2,6 +2,8 @@ import json
 from check import Check
 
 class Reader:
+    """ класс для чтения файла, возвращает массив"""
+
     def __init__(self, file_path) -> None:
         self.path = file_path
     def read_file(self)-> list:
