@@ -64,7 +64,7 @@ class Check:
     def check_age(self) -> bool:
         """для проверки возраста"""
         if isinstance(self.dictionary["age"], int):
-            if 0 <= self.dictionary["age"] < 100:
+            if 17 <= self.dictionary["age"] < 100:
                 return True
         return False
 
